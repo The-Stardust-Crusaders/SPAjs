@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPAjs", "SPAjs\SPAjs.csproj", "{CCF237B2-879D-47DD-B206-928FD12F5F0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCF237B2-879D-47DD-B206-928FD12F5F0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCF237B2-879D-47DD-B206-928FD12F5F0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCF237B2-879D-47DD-B206-928FD12F5F0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCF237B2-879D-47DD-B206-928FD12F5F0F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8622B2C9-3F4E-4E83-9531-78F1FD952377}
+	EndGlobalSection
+EndGlobal
