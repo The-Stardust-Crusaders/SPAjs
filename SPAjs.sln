@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPAjs", "SPAjs\SPAjs.csproj", "{CCF237B2-879D-47DD-B206-928FD12F5F0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SPAjs", "SPAjs\SPAjs.csproj", "{CCF237B2-879D-47DD-B206-928FD12F5F0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{A10EA618-8FA2-4A77-AA55-392DD29C0B41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{BA2FD9AC-96B2-4AB8-987E-92A8181F3C78}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{CCF237B2-879D-47DD-B206-928FD12F5F0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCF237B2-879D-47DD-B206-928FD12F5F0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCF237B2-879D-47DD-B206-928FD12F5F0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A10EA618-8FA2-4A77-AA55-392DD29C0B41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A10EA618-8FA2-4A77-AA55-392DD29C0B41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A10EA618-8FA2-4A77-AA55-392DD29C0B41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A10EA618-8FA2-4A77-AA55-392DD29C0B41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA2FD9AC-96B2-4AB8-987E-92A8181F3C78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA2FD9AC-96B2-4AB8-987E-92A8181F3C78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA2FD9AC-96B2-4AB8-987E-92A8181F3C78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA2FD9AC-96B2-4AB8-987E-92A8181F3C78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
