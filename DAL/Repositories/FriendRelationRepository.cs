@@ -8,7 +8,7 @@ using System.Linq;
 
 namespace DAL.Repositories
 {
-    class FriendRelationRepository : IRepository<FriendRelation>
+    public class FriendRelationRepository : IRepository<FriendRelation>
     {
         private readonly ApplicationContext context;
 
