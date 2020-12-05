@@ -8,7 +8,7 @@ using System.Linq;
 
 namespace DAL.Repositories
 {
-    class MapRepository : IRepository<CustomMap>
+    public class MapRepository : IRepository<CustomMap>
     {
         private readonly ApplicationContext context;
 
