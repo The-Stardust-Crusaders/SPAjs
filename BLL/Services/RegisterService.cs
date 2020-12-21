@@ -19,6 +19,13 @@ namespace BLL.Services
         private readonly UserManager<UserProfile> userManager;
         private readonly IConfiguration configuration;
 
+        public RegisterService(UserManager<UserProfile> userManager, SignInManager<UserProfile> signInManager, IConfiguration configuration)
+        {
+            this.userManager = userManager;
+            this.signInManager = signInManager;
+            this.configuration = configuration;
+        }
+
         public async Task<object> Register(RegisterDTO data)
         {
             var user = new UserProfile
