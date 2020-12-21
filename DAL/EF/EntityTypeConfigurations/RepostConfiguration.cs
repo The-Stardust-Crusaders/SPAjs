@@ -11,7 +11,7 @@ namespace DAL.EF.EntityTypeConfigurations
             builder.HasKey(rep => rep.Id);
 
             builder.HasOne(rep => rep.Request).WithMany(req => req.Reposts).HasForeignKey(rep => rep.RequestId).OnDelete(DeleteBehavior.Cascade);
-            builder.HasOne(rep => rep.UserProfile).WithMany(user => user.Reposts).HasForeignKey(rep => rep.UserProfileId).OnDelete(DeleteBehavior.Cascade);
+            //builder.HasOne(rep => rep.UserProfile).WithMany(user => user.Reposts).HasForeignKey(rep => rep.UserProfileId).OnDelete(DeleteBehavior.Cascade);
         }
     }
 }
