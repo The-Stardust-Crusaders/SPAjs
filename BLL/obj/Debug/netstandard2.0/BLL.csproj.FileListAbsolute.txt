@@ -7,3 +7,6 @@ C:\Users\User\Source\Repos\SPAjs\BLL\obj\Debug\netstandard2.0\BLL.AssemblyInfo.c
 C:\Users\User\Source\Repos\SPAjs\BLL\obj\Debug\netstandard2.0\BLL.csproj.CoreCompileInputs.cache
 C:\Users\User\Source\Repos\SPAjs\BLL\obj\Debug\netstandard2.0\BLL.dll
 C:\Users\User\Source\Repos\SPAjs\BLL\obj\Debug\netstandard2.0\BLL.pdb
+C:\Users\User\source\repos\SPAjs\BLL\bin\Debug\netstandard2.0\DAL.dll
+C:\Users\User\source\repos\SPAjs\BLL\bin\Debug\netstandard2.0\DAL.pdb
+C:\Users\User\source\repos\SPAjs\BLL\obj\Debug\netstandard2.0\BLL.csproj.CopyComplete

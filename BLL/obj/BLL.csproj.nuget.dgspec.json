@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Source\\Repos\\SPAjs\\BLL\\BLL.csproj": {}
+    "C:\\Users\\User\\source\\repos\\SPAjs\\BLL\\BLL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Source\\Repos\\SPAjs\\BLL\\BLL.csproj": {
+    "C:\\Users\\User\\source\\repos\\SPAjs\\BLL\\BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\SPAjs\\BLL\\BLL.csproj",
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\SPAjs\\BLL\\BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "C:\\Users\\User\\Source\\Repos\\SPAjs\\BLL\\BLL.csproj",
+        "projectPath": "C:\\Users\\User\\source\\repos\\SPAjs\\BLL\\BLL.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Source\\Repos\\SPAjs\\BLL\\obj\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\SPAjs\\BLL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\User\\Source\\Repos\\SPAjs\\DAL\\DAL.csproj": {
-                "projectPath": "C:\\Users\\User\\Source\\Repos\\SPAjs\\DAL\\DAL.csproj"
+              "C:\\Users\\User\\source\\repos\\SPAjs\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Users\\User\\source\\repos\\SPAjs\\DAL\\DAL.csproj"
               }
             }
           }
@@ -81,18 +81,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\User\\Source\\Repos\\SPAjs\\DAL\\DAL.csproj": {
+    "C:\\Users\\User\\source\\repos\\SPAjs\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\SPAjs\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\SPAjs\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\Users\\User\\Source\\Repos\\SPAjs\\DAL\\DAL.csproj",
+        "projectPath": "C:\\Users\\User\\source\\repos\\SPAjs\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Source\\Repos\\SPAjs\\DAL\\obj\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\SPAjs\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -125,15 +125,25 @@
               "target": "Package",
               "version": "[2.2.0, )"
             },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[2.2.6, )"
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             }
           },
           "imports": [
@@ -146,7 +156,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
