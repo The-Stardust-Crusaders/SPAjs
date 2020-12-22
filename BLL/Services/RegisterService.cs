@@ -41,8 +41,15 @@ namespace BLL.Services
                 await signInManager.SignInAsync(user, false);
                 return GenerateJwtToken(data.UserEmail, user);
             }
-
-            throw new ApplicationException("Unable to register");
+            else
+            {
+                string errorInfo = "";
+                foreach (var error in result.Errors)
+                {
+                    errorInfo += error.Description + "\n";
+                }
+                throw new ApplicationException(errorInfo);
+            }
         }
 
         private object GenerateJwtToken(string email, IdentityUser user)
