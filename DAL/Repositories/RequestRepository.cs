@@ -8,7 +8,7 @@ using System.Linq;
 
 namespace DAL.Repositories
 {
-    class RequestRepository : IRepository<Request>
+    public class RequestRepository : IRepository<Request>
     {
         private readonly ApplicationContext context;
 
