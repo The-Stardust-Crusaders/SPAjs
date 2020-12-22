@@ -3,8 +3,9 @@ using System.Threading.Tasks;
 
 namespace BLL.Interfaces
 {
-    public interface IRegisterService
+    public interface IUserProfileService
     {
         Task<object> Register(RegisterDTO data);
+        Task<object> Login(LoginDTO data);
     }
 }
