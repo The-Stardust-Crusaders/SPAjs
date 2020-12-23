@@ -4145,11 +4145,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\SPAjs\\BLL\\BLL.csproj",
+      "projectUniqueName": "C:\\Users\\User\\source\\repos\\SPAjs\\BLL\\BLL.csproj",
       "projectName": "BLL",
-      "projectPath": "C:\\Users\\User\\Source\\Repos\\SPAjs\\BLL\\BLL.csproj",
+      "projectPath": "C:\\Users\\User\\source\\repos\\SPAjs\\BLL\\BLL.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Source\\Repos\\SPAjs\\BLL\\obj\\",
+      "outputPath": "C:\\Users\\User\\source\\repos\\SPAjs\\BLL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4166,8 +4166,8 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "projectReferences": {
-            "C:\\Users\\User\\Source\\Repos\\SPAjs\\DAL\\DAL.csproj": {
-              "projectPath": "C:\\Users\\User\\Source\\Repos\\SPAjs\\DAL\\DAL.csproj"
+            "C:\\Users\\User\\source\\repos\\SPAjs\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\Users\\User\\source\\repos\\SPAjs\\DAL\\DAL.csproj"
             }
           }
         }
