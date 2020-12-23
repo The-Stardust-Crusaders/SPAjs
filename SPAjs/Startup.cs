@@ -65,12 +65,15 @@ namespace SPAjs
 
             services.AddScoped<IUnitOfWork, SPAUnitOfWork>();
             services.AddScoped<IUserProfileService, UserProfileService>();
+            services.AddScoped<IFriendService, FriendService>();
             services.AddScoped<IRepository<FriendRelation>, FriendRelationRepository>();
             services.AddScoped<IRepository<CustomMap>, MapRepository>();
             services.AddScoped<IRepository<Repost>, RepostRepository>();
             services.AddScoped<IRepository<Request>, RequestRepository>();
 
-            services.AddControllersWithViews();
+            services.AddControllersWithViews()
+                .AddNewtonsoftJson(options => 
+                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
