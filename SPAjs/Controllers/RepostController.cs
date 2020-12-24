@@ -1,8 +1,10 @@
 using BLL.DTO;
 using BLL.Infrastructure;
 using BLL.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SPAjs.Models;
+using System;
 using System.Threading.Tasks;
 
 namespace SPAjs.Controllers
@@ -16,18 +18,18 @@ namespace SPAjs.Controllers
 
         public RepostController(IRepostService repostService)
         {
-            this.repostSevice = repostSevice;
+            this.repostSevice = repostService;
         }
 
         [Authorize]
         [HttpGet("{id}", Name = "GetUserReposts")]
-        public async Task<IActionResult> GetUserReposts(string id)
+        public IActionResult GetUserReposts(string id)
         {
             IActionResult response;
 
             try
             {
-                var reposts = await repostSevice.GetRepostsByIdUser(id);
+                var reposts = repostSevice.GetRepostsByIdUser(id);
                 response = Ok(reposts);
             } 
             catch(ValidationException ex)
@@ -53,8 +55,8 @@ namespace SPAjs.Controllers
                     UserProfileId = model.UserProfileId,
                     RequestId = model.RequestId
                 };
-                var accessToken = await repostSevice.CreateRepost(dto);
-                response = Ok(accessToken);
+                await repostSevice.CreateRepost(dto);
+                response = Ok();
             } 
             catch(ValidationException ex)
             {
@@ -72,13 +74,13 @@ namespace SPAjs.Controllers
 
         [Authorize]
         [HttpDelete("{repostId}", Name = "DeleteRepost")]
-        public async Task<IActionResult> DeleteRepost(string repostId)
+        public IActionResult DeleteRepost(string repostId)
         {
             IActionResult response;
 
             try
             {
-                await friendService.DeleteRepost(repostId);
+                repostSevice.DeleteRepost(repostId);
                 response = Ok();
             }
             catch(ValidationException ex)

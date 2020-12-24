@@ -1,15 +1,9 @@
 using BLL.DTO;
 using BLL.Interfaces;
 using DAL.Entities;
+using DAL.Interfaces;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.Configuration;
-using Microsoft.IdentityModel.Tokens;
-using System;
 using System.Collections.Generic;
-using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
-using System.Security.Claims;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace BLL.Services
@@ -26,12 +20,12 @@ namespace BLL.Services
             this.userManager = userManager;
         }
 
-        public async Task<object> CreateRepost(RepostDTO data)
+        public async Task CreateRepost(RepostDTO data)
         {
             //var user = userManager.Users.SingleOrDefault(u => u.Id == data.UserProfileId);
-            var user = await userManager.Users.FindByIdAsync(data.UserProfileId);
+            var user = await userManager.FindByIdAsync(data.UserProfileId);
 
-            Request request = await SPAUoF.Requests.GetById(data.RequestId);
+            Request request = SPAUoF.Requests.GetById(data.RequestId);
 
 
             Repost repost = new Repost
@@ -45,15 +39,15 @@ namespace BLL.Services
 
         }
 
-        public async Task<object> DeleteRepost(string? id)
+        public void DeleteRepost(string id)
         {
 
             SPAUoF.Reposts.Delete(id);
-            SPAUoF.SaveShanges();
+            SPAUoF.SaveChanges();
 
         }
 
-        public async IEnumerable<Repost> GetRepostsByIdUser(string? UserId)
+        public IEnumerable<Repost> GetRepostsByIdUser(string UserId)
         {
 
             return SPAUoF.Reposts.Get(rp => rp.UserProfileId == UserId);

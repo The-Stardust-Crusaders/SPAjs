@@ -67,6 +67,7 @@ namespace SPAjs
             services.AddScoped<IUserProfileService, UserProfileService>();
             services.AddScoped<IFriendService, FriendService>();
             services.AddScoped<IRequestService, RequestService>();
+            services.AddScoped<IRepostService, RepostService>();
             services.AddScoped<IRepository<FriendRelation>, FriendRelationRepository>();
             services.AddScoped<IRepository<CustomMap>, MapRepository>();
             services.AddScoped<IRepository<Repost>, RepostRepository>();

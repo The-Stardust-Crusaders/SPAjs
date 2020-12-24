@@ -1,14 +1,16 @@
 using BLL.DTO;
+using DAL.Entities;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace BLL.Interfaces
 {
     public interface IRepostService
     {
-        Task<object> CreateRepost(RepostDTO data);
+        Task CreateRepost(RepostDTO data);
 
-        Task<object> DeleteRepost(string? id);
+        void DeleteRepost(string id);
 
-        IEnumerable<RepostDTO> GetRepostsByIdUser(string? UserId);
+        IEnumerable<Repost> GetRepostsByIdUser(string UserId);
     }
 }
